@@ -1,12 +1,3 @@
-Canvas LMS
-==========
-
-Canvas is a modern, open-source [LMS](https://en.wikipedia.org/wiki/Learning_management_system)
-developed and maintained by [Instructure Inc.](https://www.instructure.com/) It is released under the
-AGPLv3 license for use by anyone interested in learning more about or using
-learning management systems.
-[Please see our main wiki page for more information](http://github.com/instructure/canvas-lms/wiki)
-
 Installation
 ============
 
@@ -18,7 +9,7 @@ on our wiki.
 
 Quick Start
 ===========
-** For stable start, work on Node version 10 and Ruby version 2.6.. also be patient!.
+** For stable start, work on Node version 10 and Ruby version 2.6.. also be patient!. **Check using nvm and rvm guide at the end of README.md
 
 1)	Cloning Project to bashqash.. then enter bashqash, and checkout to stable branch
 ```sh
@@ -69,3 +60,64 @@ bundle exec rails server
 ```sh
 bundle exec script/delayed_job run
 ```
+
+NVM
+===
+1)	Intall NVM
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+```
+
+2)	Check all available  versions
+```sh
+nvm ls-remote
+```
+
+3)	Install version 10.23.0 & 12.19.0
+```sh
+nvm install 10.23.0 && nvm install 12.19.0
+```
+
+4) Set version 12.19.0 as default
+```sh
+nvm alias default 12.19.0
+```
+
+5)	Use version 10.23.0
+```sh
+nvm use 10.23.0
+```
+
+RVM
+===
+1)	Intall RVM
+```sh
+sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev && gpg --keyserver hkp://keys.gnupg.net --recv-keys
+```
+```sh
+curl -sSL https://get.rvm.io | bash -s stable & source ~/.rvm/scripts/rvm
+```
+
+3)	Install version 2.6.5 & 2.7.2
+```sh
+rvm install 2.6.5 && rvm install 2.7.2
+```
+
+4) Set version 2.7.2 as default
+```sh
+rvm use 2.7.2 --default
+
+```
+
+5)	Use version 2.6.5
+```sh
+rvm use 2.6.5
+```
+
+** update ~/.bashrc
+1) Open ~/.bashrc
+```sh
+sudo nano ~/.bashrc
+```
+
+2) Add the line between brackets ( source ~/.rvm/scripts/rvm ) to ~/.bashrc and save it.
