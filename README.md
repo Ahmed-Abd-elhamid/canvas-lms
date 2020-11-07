@@ -120,4 +120,7 @@ rvm use 2.6.5
 sudo nano ~/.bashrc
 ```
 
-2) Add the line between brackets ( source ~/.rvm/scripts/rvm ) to ~/.bashrc and save it.
+2) Add the followin line to ~/.bashrc and save it.
+```sh
+source ~/.rvm/scripts/rvm
+```
