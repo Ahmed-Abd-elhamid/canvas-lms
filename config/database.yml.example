@@ -2,24 +2,24 @@
 test:
   adapter: postgresql
   encoding: utf8
-  database: canvas_test
+  database: qalam_test
   host: localhost
-  username: canvas
+  username: qalam
   password: your_password
   timeout: 5000
 
 development:
   adapter: postgresql
   encoding: utf8
-  database: canvas_development
+  database: qalam_development
   password: your_password
   timeout: 5000
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: canvas_production
+  database: qalam_production
   host: localhost
-  username: canvas
+  username: qalam
   password: your_password
   timeout: 5000
