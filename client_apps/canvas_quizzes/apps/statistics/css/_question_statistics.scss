@@ -164,6 +164,8 @@
         background-color: $rowHighlightBackgroundColor;
       }
       td.respondent-link {
+        display: none;
+        visibility: hidden;
         font-weight: normal;
       }
     }
@@ -182,9 +184,11 @@
     }
 
     td.respondent-link {
-      width: 15%;
-      padding-left: $whitespace;
-      min-width: 100px;
+      display: none;
+      visibility: hidden;
+      // width: 15%;
+      // padding-left: $whitespace;
+      // min-width: 100px;
     }
   }
 }
