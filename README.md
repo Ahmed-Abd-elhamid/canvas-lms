@@ -65,12 +65,13 @@ NVM
 ===
 1)	Intall NVM
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.35.3/install.sh -o install_nvm.sh && bash install_nvm.sh
+
 ```
 
 2)	Check all available  versions
 ```sh
-nvm ls-remote
+source ~/.profile && nvm ls-remote
 ```
 
 3)	Install version 10.23.0 & 12.19.0
@@ -92,10 +93,10 @@ RVM
 ===
 1)	Intall RVM
 ```sh
-sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev && gpg --keyserver hkp://keys.gnupg.net --recv-keys
+sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev && gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
 ```sh
-curl -sSL https://get.rvm.io | bash -s stable & source ~/.rvm/scripts/rvm
+curl -sSL https://get.rvm.io | bash -s stable && source ~/.rvm/scripts/rvm
 ```
 
 3)	Install version 2.6.5 & 2.7.2
